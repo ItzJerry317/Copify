@@ -14,6 +14,11 @@ app.on('ready', function(){
     width: 600,
     height: 600,
     resizable: false,
+    webPreferences: {
+      nodeIntegration: true,
+      contextIsolation: false,
+      enableRemoteModule: true,
+    }
   });
   // Load html into window
   mainWindow.loadURL(url.format({
@@ -21,7 +26,7 @@ app.on('ready', function(){
     protocol: 'file:',
     slashes: true
   }));
-  //remove menu
+  //remove menu bar
   mainWindow.setMenu(null);
   // Quit app when closed
   mainWindow.on('closed', function(){
