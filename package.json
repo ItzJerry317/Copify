@@ -1,0 +1,14 @@
+{
+  "name": "copify",
+  "version": "1.0.0",
+  "description": "Visualize your copies",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "ItzJerry",
+  "license": "MIT",
+  "dependencies": {
+    "electron": "^19.0.8"
+  }
+}
